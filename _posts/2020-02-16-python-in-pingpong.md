@@ -4,6 +4,7 @@ title: "핑퐁팀의 Python 문화 구축기"
 subtitle: 본격 Python 문화 바로잡기
 tags:
     - Engineering
+    - Python
 ---
 
 이 글은 [Pingpong 블로그](https://blog.pingpong.us/python-in-pingpong/)에 기고된 글로, 핑퐁팀에서 Python을 어떻게 사용하는지와 코드를 어떻게 관리하는지에 대해 서술한 글입니다. 원 저자는 저와 [정욱재 님](https://jeongukjae.github.io/)입니다. 기록을 위해 제 블로그에도 올려놓습니다.

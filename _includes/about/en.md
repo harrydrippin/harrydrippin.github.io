@@ -10,11 +10,29 @@
 
 ### Scatter Lab (Pingpong Team)
 
-> **ML Software Engineer (Seoul, Korea)** <br>
+> **Machine Learning Engineer (Seoul, Korea)** <br>
 > Dec. 2019 ~ Present <br> **Keywords:** PyTorch, TensorFlow, Spring Boot, GCP, AWS, SWIG, C++
 
--   Building machine learning model backend and infrastructure for serving daily conversation chatbot system. Conducting a research about optimizing BERT-based NLP model and infrastructure for fast and fault-tolerant inference system.
--   Building a cloud-based log pipeline system to efficiently collect and statistically analyze the various types of logs from the chatbot pipeline and ML model.
+- Implement and manage overall ML engineering parts including ML pipeline, serving optimization, data engineering, model optimization, internal tools/libraries.
+- Build a pipeline for preprocessing and pseudonymizing 600+GB sized text data, and vector indexing using Kubeflow Pipelines.
+    - Build a internal library that collects and manages filters for de-identifying data.
+    - Build a pipeline for automatic build and deployment to manage Docker images for pipeline.
+    - Build a research system on GCP that enables efficient research while maintaining privacy compliance.
+- Optimize a pretraining process of large size language model for various models.
+    - Optimize BERT pretraining process with distributed training strategies using 16-32 node cluster above multiple cloud components (Internal distributed training library, EFA, FSx, S3), collaborated with AWS MLSL.
+    - Implement training code for training billion-size GPT-2 using DeepSpeed, and data preprocessing code using Apache Beam.
+    - Conduct investigation for searching bottlenecks for optimizing Cloud TPU performance while pretraining using Cloud TPU Profiler.
+- Conduct a research for multiple vector similarity search frameworks for real-time inference.
+    - Build an early version of faiss-serving, server for inferencing vector similarity search above Faiss index using C++.
+    - Refactor faiss-serving using multi-threaded worker on Python. Achieved 130 ~ 150 RPS with static memory usage above n-thousand concurrent users, which is 5x faster than early version.
+- Implement initial version of Pingpong Flow (inference pipeline of 'Luda Lee’, a conversational chatbot).
+    - Build a library for loading MeCab on Java environment, enabling morpheme analysis with custom dictionary inside Spring - Boot project. (github.com/scatterlab/mecab-ko-java)
+    - Build a cloud-based log pipeline system to efficiently collect and statistically analyze the various types of logs - from the chatbot pipeline and ML model using BigQuery and Cloud Logging.
+- Build a Kubernetes cluster for deploying various internal tools, using Istio and Argo CD.
+    - Build a model registry server using ML Metadata (TFX) and deploy to the internal cluster.
+- Contribute to the establishment and settlement of an team development culture.
+    - Build a team development guide for managing Python project, including contents about linter, CI/CD, commit convention, etc.
+    - Lead various study sessions about Docker/Kubernetes and Go.
 
 ### Common Computer (AI Network)
 
